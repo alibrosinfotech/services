@@ -1,3 +1,4 @@
+/* General Styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -34,4 +35,51 @@ a.btn {
     background-color: #4CAF50;
     text-decoration: none;
     border-radius: 5px;
+}
+
+/* Scrolling Services Section */
+.services {
+    margin-top: 30px;
+    padding: 10px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+.scroll-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 10px;
+    gap: 15px;
+}
+.scroll-item {
+    flex: 0 0 auto;
+    padding: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 8px;
+    white-space: nowrap;
+    text-align: center;
+    min-width: 150px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        text-align: left;
+        padding: 15px;
+    }
+    nav a {
+        display: block;
+        margin: 5px 0;
+    }
+    main {
+        padding: 10px;
+    }
+    .scroll-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .scroll-item {
+        width: 80%;
+    }
 }
